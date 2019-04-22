@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-box">
       <div class="avatar-box">
-        <img src="../assets/img/logo.png" alt>
+        <img src="../assets/img/1.jpg" alt>
       </div>
       <el-form :rules="loginFormRules" ref="loginFormRef" :model="loginForm">
         <el-form-item prop="username">
@@ -65,17 +65,27 @@ export default {
 <style lang="less" scoped>
 .login-container {
   height: 100%;
-  background-color: #2b4b6b;
+  // background-image: linear-gradient(0deg,skyblue,pink);
+  background: url('../assets/img/4.jpg') no-repeat center;
+  background-size: 100% 100%;
   overflow: hidden;
   .login-box {
     width: 450px;
     height: 304px;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 4px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    .el-button--primary {
+      background-image: linear-gradient(30deg, #5e2a94, #fff);
+      border-color: #5e2a94;
+    }
+    .el-button--info {
+      background-image: linear-gradient(30deg, hotpink, #fff);
+      border-color: #5e2a94;
+    }
     .el-form {
       position: absolute;
       bottom: 0;
